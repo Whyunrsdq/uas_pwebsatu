@@ -13,12 +13,15 @@
     border: none;
     text-decoration: none;
 }
+span{
+    color: #fc4a1a;
+}
 
 body{
     font-family: 'poppins', sans-serif;
-    background-color: #4abdac;
+    background-color: var(--bg);
     color: #fff;
-    min-height: 2000vh;
+    min-height: 100%;
 }
 
 .navbar{
@@ -64,7 +67,10 @@ body{
     padding-bottom: 0.5rem;
     border-bottom: 0.2rem solid #fc4a1a;
     transform: scaleX(0);
+
 }
+
+
 
 .navbar .navbar-nav a:hover::after{
     transform: scaleX(0.7);
@@ -99,10 +105,11 @@ body{
     display: block;
     position: absolute;
     width: 100%;
-    height: 30%;
+    height: 25%;
     bottom: 0;
     background: linear-gradient(0deg, #4abdac 3%, rgba(255, 255, 255, 0) 25%
     );
+
 }
 
 .hero .content{
@@ -131,7 +138,7 @@ body{
     mix-blend-mode: difference;
 }
 
-.hero .content .cta{
+.hero .content a{
     display: inline-block;
     margin-top: 2rem;
     padding: 1rem 2rem;
@@ -142,11 +149,16 @@ body{
     border-radius: 0.5rem;
     border: 2px solid #fff;
     cursor: pointer;
+    
+}
+
+.hero .content a:hover {
+    letter-spacing: 1px;
 }
 
 .about {
     width: 100%;
-    padding: 150px 0;
+    padding: 15rem 0;
 }
 
 .about-me {
@@ -160,12 +172,13 @@ body{
 
 .about-me img {
     height: auto;
-    width: 400px;
+    width: 30rem;
     border-radius: 50px;
 }
 
 .about-text {
     width: 550px;
+    text-align: center;
 }
 
 .about-text h2 {
@@ -199,12 +212,126 @@ body{
     cursor: pointer;
     text-align: center;
 }
+.about .about-me .about-text .cta:hover{
+    letter-spacing: 1px;
+}
+.product{
+    padding: 1rem 9%;
+    padding-bottom: 5rem;
+    padding-top: 7rem;
+
+}
+
+.product .product-heading{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 3rem;
+
+}
+
+.product .box-product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:1rem;
+}
+
+.product .box-product .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color: #f7b633b5;
+    text-align: center;
+    padding: 1.9rem 1.2rem;
+}
+
+.product .box-product .box img{
+    height: 23rem;
+    border-radius: 10px;
+
+}
+
+.product .box-product .box h2{
+    color: black;
+}
+
+h5{
+    font-size: 2rem;
+}
+
+.product .box-product .box a{
+    margin-top: 10px ;
+    display: inline-block;
+    background: #fc4a1a;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.product .box-product .box a:hover{
+    letter-spacing: 1px;
+}
+
+.product .box-product .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+.contact{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+}
+.contact .contact-me{
+    font-size: 2rem;
+    text-align: center;
+    top: 0;
+}
+
+.sosial a i{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    background-color: red;
+    border: 2px solid black;
+    
+
+}
+.sosial-media {
+    width: 100%;
+    height: 100px;
+}
+.sosial-media a i {
+    font-size: 4rem;
+    margin-top: 3rem;
+    padding: 0 15px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 3rem 2rem;
+    margin-top: 3rem;
+    color:black;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+footer span{
+    font-weight: 300;
+    color: black;
+}
+
 
 
 
 @media (max-width: 1336px){
     html{
         font-size: 75%;
+    }
+    .about .about-me {
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 768px) {
@@ -270,6 +397,11 @@ body{
 
     .about .about-me .about-text p{
         font-size: 1.6rem;
+    }
+
+    .product{
+        padding: 20px;
+        padding-top: 7rem;
     }
 }
 @media (max-width: 450px) {
