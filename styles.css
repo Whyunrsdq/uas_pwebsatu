@@ -246,13 +246,14 @@ body{
 }
 
 .product .box-product .box img{
-    height: 23rem;
+    height: 15rem;
     border-radius: 10px;
 
 }
 
 .product .box-product .box h2{
     color: black;
+    font-size:1rem;
 }
 
 h5{
