@@ -19,8 +19,8 @@ span{
 
 body{
     font-family: 'poppins', sans-serif;
-    background-color: var(--bg);
-    color: #fff;
+    background-color: #4abdac;
+    color: white;
     min-height: 100%;
 }
 
@@ -93,7 +93,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('/img/home.jpg');
+    background-image: url(img/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -324,6 +324,7 @@ footer span{
     font-weight: 300;
     color: black;
 }
+
 
 
 
